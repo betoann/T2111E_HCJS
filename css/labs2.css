@@ -1,0 +1,14 @@
+ol{
+    font-size: 15px;
+    text-align: right;
+}
+h4{
+    color: #a94b4b;
+    border-top: 2px dashed #af1010;
+}
+a{
+    line-height: 5px;
+}
+li{
+    list-style: none;
+}

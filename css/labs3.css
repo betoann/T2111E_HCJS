@@ -1,9 +1,12 @@
 *{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 body{
     background-image: url("../imgs/Labs3/anhso1.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     color: #242424;
     font-size: 14px;
     line-height: 1.5;
@@ -12,7 +15,6 @@ body{
 }
 #page{
     width: 1200px;
-    height: 1050px;
     background-color: #f1f1f1;
     margin: 100px 150px 0 ;
 }
@@ -39,9 +41,9 @@ body{
 .left{
     float: left;
     width: 300px;
-    height: 1000px;
+    height: 800px;
     background-color: #e8e8e8;
-    margin-top: -190px;
+    margin-top: -160px;
     margin-left: 60px;
     padding-left: 30px;
 }
@@ -63,8 +65,7 @@ table{
 }
 .right{
     background-color: #eeeeee;
-    height: 820px;
-    padding: 0 100px 0 400px;
+    padding: 50px 100px 0 400px;
 }
 .nav{
     font-size: 20px;

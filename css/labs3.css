@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url("../imgs/Labs3/anhso1.jpg");
+    background-size: cover;
+    color: #242424;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+#page{
+    width: 1200px;
+    height: 1050px;
+    background-color: #f1f1f1;
+    margin: 100px 150px 0 ;
+}
+.top{
+    width: 100%;
+    height: 200px;
+    background-color: #bbc4cd;
+}
+#name{
+    font-size: 50px;
+    width: 100%;
+    padding: 70px 400px 0;
+    margin: 0;
+}
+#subname{
+    font-size: 15px;
+    padding: 0 0 400px ;
+    margin: 0 0 0 400px;
+}
+.bottom{
+
+}
+.left{
+    float: left;
+    width: 300px;
+    height: 1000px;
+    background-color: #e8e8e8;
+    margin-top: -190px;
+    margin-left: 60px;
+    padding-left: 30px;
+}
+#avatar{
+    width: 180px;
+    height: 180px;
+    border-radius: 180px;
+    margin: 25px 30px;
+}
+.daumuc{
+    font-size: 30px;
+}
+table{
+    font-weight: 400;
+}
+.anh img{
+    width: 20px;
+    height: 20px;
+}
+.right{
+    background-color: #eeeeee;
+    height: 820px;
+    padding: 0 100px 0 400px;
+}
+.nav{
+    font-size: 20px;
+}
+#gach1,#gach2,#gach3{
+    border-top: 1px solid #242424;
+}

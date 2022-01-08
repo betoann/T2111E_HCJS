@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    color: #242424;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    background-color: #d9d8d8;
+}
+.header{
+    width: 90%;
+    height: 60px;
+    background-color: #fafafa;
+    padding: 20px 40px;
+    margin: 20px 5%;
+}
+.top{
+    float: left;
+    width: 1370px;
+    margin: 10px 70px;
+}
+.box1{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.box1 .text1{
+    background-color: #fafafa;
+    margin: -5px 70px 0;
+    padding: 10px;
+}
+.box1 .name1{
+    padding-top: 70px;
+}
+.box2{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.box2 .text2{
+    background-color: #fafafa;
+    margin: -5px 70px 0;
+    padding: 10px;
+}
+.box2 .name2{
+    padding-top: 170px;
+}
+.box3{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.box3 .text3{
+    background-color: #fafafa;
+    margin: -5px 70px 0;
+    padding: 10px;
+}
+.box3 .name3{
+    padding-top: 70px;
+}
+.box4{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.box4 .text4{
+    background-color: #fafafa;
+    margin: -5px 70px 0;
+    padding: 10px;
+}
+.box4 .name4{
+    padding-top: 105px;
+}
+.footer{
+    color: #fafafa;
+    background-color: #242424;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 0 70px;
+}
+.footer:hover{
+    background-color: #af1010;
+}
+.bot{
+    float: left;
+    width: 1370px;
+    margin: 50px 70px 10px;
+}
+.box5{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.box5 .text5{
+    background-color: #fafafa;
+    margin: -5px 70px 0;
+    padding: 10px;
+}
+.box5 .name5{
+    padding-top: 180px;
+}
+.box6{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.box6 .text6{
+    background-color: #fafafa;
+    margin: -5px 70px 0;
+    padding: 10px;
+}
+.box6 .name6{
+    padding-top: 65px;
+}
+.box7{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.box7 .text7{
+    background-color: #fafafa;
+    margin: -5px 70px 0;
+    padding: 10px;
+}
+.box7 .name7{
+    padding-top: 70px;
+}
+.box8{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.box8 .text8{
+    background-color: #fafafa;
+    margin: -5px 70px 0;
+    padding: 10px;
+}

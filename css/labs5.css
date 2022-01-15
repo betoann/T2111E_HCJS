@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    color: #242424;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    background-color: #d9d8d8;
+}
+.page{
+    width: 1000px;
+    min-height: 680px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    box-shadow: 0 0 10px #242424;
+    background-color: #fafafa;
+}
+.header{
+    padding: 50px 30px 0;
+    font-size: 30px;
+}
+.form-gr{
+    padding: 0 30px;
+}
+.container input[type=text]{
+    width: 100%;
+    height: 50px;
+    font-size: 40px;
+    padding: 30px;
+    background-color: #e0e0e0;
+    border-top: #242424;
+    border-right: #242424;
+    border-left: #242424;
+    margin: 20px 0 0;
+}
+.slt{
+    float: left;
+    width: 45%;
+    height: 60px;
+    font-size: 40px;
+    color: #616161;
+    background-color: #e0e0e0;
+    padding: 0 30px;
+    margin-top: 20px;
+    border-top: #242424;
+    border-right: #242424;
+    border-left: #242424;
+}
+.opt{
+    float: right;
+}
+.sub{
+    padding: 80px 0 0 540px;
+    font-size: 15px;
+    color: #616161;
+}
+.nav{
+    font-size: 15px;
+    color: #616161;
+}
+.sub-cc{
+    margin: 0 20px;
+}
+.checknaor{
+    width: 400px;
+    padding-top: 20px;
+}
+.checkcrs{
+    width: 500px;
+    height: 100px;
+    margin: -110px 500px;
+}
+.form-gr label{
+    font-size: 20px;
+    padding: 20px;
+}
+label:hover{
+    color: #3fb61f;
+    transition: all 100ms;
+}
+.footer{
+    width: 500px;
+    margin: 130px 600px 0;
+}
+.form-gr button{
+    font-size: 30px;
+    padding: 5px 30px;
+}
+button:hover{
+    color: #3fb61f;
+    background-color: #195407;
+    transition: all 500ms;
+}

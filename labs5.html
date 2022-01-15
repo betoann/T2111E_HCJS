@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab session 5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/labs5.css">
+</head>
+<body>
+    <div class="page">
+        <p class="header">Create task</p>
+        <div class="container">
+            <form method="get" action="#">
+                <div class="form-gr">
+                    <input type="text" name="type" size="" placeholder="Type"/>
+                </div>
+                <div class="form-gr ">
+                    <select class="slt" name="company">
+                        <option value="company">Company</option>
+                    </select>
+
+                    <select class="slt opt" name="optional" id="">
+                        <option value="opportunity">Opportunity</option>
+                    </select>
+                    <p class="sub">Optional</p>
+                </div>
+                <div class="form-gr">
+                    <input type="text" name="name" placeholder="Task Name">
+                </div>
+                <div class="form-gr">
+                    <input type="text" name="cc" placeholder="CC">
+                    <p class="nav sub-cc">Optional</p>
+                </div>
+                <div class="form-gr checknaor">
+                    <p class="nav">Nature of request</p>
+                    <label><input type="checkbox" name="">Ads review</label> <br>
+                    <label><input type="checkbox" name="">Keywords review</label> <br>
+                    <label><input type="checkbox" name="">Extensions review</label>
+                </div>
+                <div class="form-gr checkcrs">
+                    <p class="nav">Current reviewable status</p>
+                    <label><input type="radio" name="CurrentReviewableStatus" value="App">Approved</label> <br>
+                    <label><input type="radio" name="CurrentReviewableStatus" value="NotApp">Not approved</label>
+                </div>
+                <div class="form-gr footer">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

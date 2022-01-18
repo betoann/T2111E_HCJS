@@ -16,8 +16,9 @@
         do{
             flag = 0;
             arr[i] = prompt("Nhap so thu "+i);
+            arr[i] = parseInt(arr[i]);
             for (var j=1; j<=i-1; j++){
-                if (arr[j] == arr[i]){
+                if (arr[j] == arr[i] || arr[i]<0 || arr[i]>99 || isNaN(arr[i])){
                     flag = 1;
                     break;
                 }

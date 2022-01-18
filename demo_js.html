@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo JS</title>
+</head>
+<body>
+    <script type="text/javascript" src="js/demo.js"></script>
+    <script type="text/javascript">
+      var x;
+      x=10;
+      x="hello";
+      console.log(x);
+      var y=20;
+      for(var i=0; i<y; i++){
+        console.log("i= "+i);
+      }
+      var arr=[];
+      var s=4000;
+      var lichsu=[];
+      for(var i=0; s<1000000; i++){
+        s+=s*8/100;
+        lichsu[i]=s;
+      }
+      for(var i=0; i<lichsu.length; i++){
+        console.log(lichsu[i]);
+      }
+      var strs=["xin chao","hello","word","abc","xyz"];
+      strs.sort();
+      for (var i=0; i<strs.length; i++){
+        console.log(strs[i]);
+      }
+      function tinhtong(a,b){
+        console.log(a+b);
+      }
+      tinhtong(4,5);
+      //alert("Cấm trẻ em dưới 18+");
+
+      //var b=confirm("Bạn chắc chắn chọn");
+      //console.log(b);
+
+      //var c=prompt("Vui lòng nhập tên");
+      //console.log(c);
+
+      //do{
+      //  var c = prompt("Nhap vao mot so: ");
+      //  c = parseInt(c);
+      //}while(isNaN(c));
+
+      //do{
+        //var c =prompt("Nhap so:");
+        //c = parseInt(c);
+      //}while (isNaN(c) || c<1 || c>99);
+      //console.log(c);
+
+      //setTimeout(function (){
+        //alert("Canh bao");
+      //},5000);  //5000ms
+
+      //setInterval(function (){
+        //alert("Hello");
+      //},5000);
+
+      /* var min=10,sec=0;
+      var timer = setInterval(function (){
+        var m_txt=min;
+        if (min<10){
+          m_txt="0"+min;
+        }
+        //var m_txt=min<10?"0"+min:min;
+
+        var sec_txt=sec;
+        if (sec<10){
+          sec_txt="0"+sec;
+        }
+        console.log(m_txt+":"+sec_txt);
+        sec--;
+        if (sec<0){
+          sec=59;
+          min--;
+        }
+        //var sec_txt=sec<0?"0"+sec:sec;
+
+        if (min<0){
+          clearInterval(timer);
+        }
+      },100); */
+
+      var r=Math.random();
+      r=r*100;
+      r=parseInt(r);
+      do{
+        var n =prompt("Nhap so:");
+        n = parseInt(n);
+      }while (isNaN(n) || n<1 || n>99);
+      if (n==r){
+        alert("Chuc mung");
+      }else{
+        alert("Chia buon");
+      }
+    </script>
+</body>
+</html>

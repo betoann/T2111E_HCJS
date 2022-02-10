@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment JS 2</title>
+    <link rel="stylesheet" href="css/assignmentjs2.css">
+</head>
+<body>
+    <h1>Xác định vị trí trong Tabs</h1>
+    <ul>
+        <li onclick="home()">Home</li>
+        <li onclick="profile()">Profile</li>
+        <li onclick="messages()">Messages</li>
+        <li onclick="setting()">Setting</li>
+    </ul>
+    <p id="content">This is Home content</p>
+    <script type="text/javascript">
+        function home(){
+            var h_content = document.getElementById("content");
+            h_content.innerText = "This is Home content";
+        }
+        function profile(){
+            var p_content = document.getElementById("content");
+            p_content.innerText = "This is Profile content";
+        }
+        function messages(){
+            var m_content = document.getElementById("content");
+            m_content.innerText = "This is Messages content";
+        }
+        function setting(){
+            var s_content = document.getElementById("content");
+            s_content.innerText = "This is Setting content";
+        }
+    </script>
+</body>
+</html>

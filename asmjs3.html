@@ -24,13 +24,8 @@
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript">
   $.ajax({
-    url:"http://api.openweathermap.org/data/2.5/forecast",
+    url:"http://api.openweathermap.org/data/2.5/forecast?q=Hanoi%2Cvietnam&appid=09a71427c59d38d6a34f89b47d75975c&units=metric",
     method:"GET",
-    data:{
-      q:"Hanoi,vietnam",
-      appid:"09a71427c59d38d6a34f89b47d75975c",
-      units:"metric"
-    },
     success:function (wth){
       var list = wth.list;
       for (var i=0; i<list.length; i++){

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment JS 3</title>
+    <link rel="stylesheet" href="vendors/bootstrap3.4.1/css/bootstrap.css">
+    <link rel="stylesheet" href="css/assignmentjs3.css">
+</head>
+<body>
+    <section class="col-md-12">
+        <div class="container">
+            <ul class="row" id="forecast">
+<!--                <li class="col-md-3">-->
+<!--                    <div class="item">-->
+<!--                        <h4 class="date_time">2020-07-27 15:00:00</h4>-->
+<!--                        <h2 class="temp">27,69 <sup>o</sup>C</h2>-->
+<!--                        <p>overcast clouds</p>-->
+<!--                        <img src="imgs/AssignmentJs3/anhso1.png" alt="">-->
+<!--                    </div>-->
+<!--                </li>-->
+            </ul>
+        </div>
+    </section>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript">
+        $.ajax({
+            url:"http://api.openweathermap.org/data/2.5/forecast",
+            method:"GET",
+            data:{
+                q:"Hanoi,vietnam",
+                appid:"09a71427c59d38d6a34f89b47d75975c",
+                units:"metric"
+            },
+            success:function (wth){
+                var list = wth.list;
+                for (var i=0; i<list.length; i++){
+                    var date = list[i].dt_txt;
+                    var tmp = list[i].main.temp;
+                    var dsc = list[i].weather[0].description;
+                    var icon = list[i].weather[0].icon;
+                    var li_html = "<li class=\"col-md-3\">\n" +
+                        "                    <div class=\"item\">\n" +
+                        "                        <h4 class=\"date_time\">"+date+"</h4>\n" +
+                        "                        <h2 class=\"temp\">"+tmp+"<sup>o</sup>C</h2>\n" +
+                        "                        <p>"+dsc+"</p>\n" +
+                        "                        <img src=\"http://openweathermap.org/img/wn/"+icon+"@2x.png\" alt=\"\">\n" +
+                        "                    </div>\n" +
+                        "                </li>";
+                    $("#forecast").append(li_html);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

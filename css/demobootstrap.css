@@ -1,0 +1,18 @@
+body{
+    background-color: #616161;
+}
+img{
+    width: 100%;
+}
+h1{
+    padding: 20px;
+    background-color: #fafafa;
+}
+.col-md-3{
+    background-color: #fafafa;
+    text-align: center;
+
+    border: 1px solid red;
+
+
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo ajax</title>
+</head>
+<body>
+<section class="col-md-12">
+    <div class="container">
+        <ul class="row" id="list">
+
+        </ul>
+    </div>
+</section>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+    $.ajax({
+        url:"https://foodgroup.herokuapp.com/api/today-special",
+        method:"GET",
+        success:function (rs){
+            var products = rs.data;
+            for (var i=0; i<products.length; i++){
+                var p_html = "<li class=\"col-md-3\">\n" +
+                    "                <img src=\""+products[i].image+"\" class=\"thumbnail\"/>\n" +
+                    "                <h2>"+products[i].name+"</h2>\n" +
+                    "                <p>"+products[i].price+"</p>\n" +
+                    "            </li>";
+                $("#list").append(p_html);
+            }
+        }
+    });
+</script>
+</body>
+</html>

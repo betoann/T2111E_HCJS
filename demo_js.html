@@ -3,37 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Demo JS</title>
+    <link rel="stylesheet" href="css/demojs.css">
 </head>
 <body>
     <script type="text/javascript" src="js/demo.js"></script>
     <script type="text/javascript">
-      var x;
-      x=10;
-      x="hello";
-      console.log(x);
-      var y=20;
-      for(var i=0; i<y; i++){
-        console.log("i= "+i);
-      }
-      var arr=[];
-      var s=4000;
-      var lichsu=[];
-      for(var i=0; s<1000000; i++){
-        s+=s*8/100;
-        lichsu[i]=s;
-      }
-      for(var i=0; i<lichsu.length; i++){
-        console.log(lichsu[i]);
-      }
-      var strs=["xin chao","hello","word","abc","xyz"];
-      strs.sort();
-      for (var i=0; i<strs.length; i++){
-        console.log(strs[i]);
-      }
-      function tinhtong(a,b){
-        console.log(a+b);
-      }
-      tinhtong(4,5);
+      // var x;
+      // x=10;
+      // x="hello";
+      // console.log(x);
+      // var y=20;
+      // for(var i=0; i<y; i++){
+      //   console.log("i= "+i);
+      // }
+      // var arr=[];
+      // var s=4000;
+      // var lichsu=[];
+      // for(var i=0; s<1000000; i++){
+      //   s+=s*8/100;
+      //   lichsu[i]=s;
+      // }
+      // for(var i=0; i<lichsu.length; i++){
+      //   console.log(lichsu[i]);
+      // }
+      // var strs=["xin chao","hello","word","abc","xyz"];
+      // strs.sort();
+      // for (var i=0; i<strs.length; i++){
+      //   console.log(strs[i]);
+      // }
+      // function tinhtong(a,b){
+      //   console.log(a+b);
+      // }
+      // tinhtong(4,5);
       //alert("Cấm trẻ em dưới 18+");
 
       //var b=confirm("Bạn chắc chắn chọn");
@@ -68,7 +69,6 @@
           m_txt="0"+min;
         }
         //var m_txt=min<10?"0"+min:min;
-
         var sec_txt=sec;
         if (sec<10){
           sec_txt="0"+sec;
@@ -80,13 +80,12 @@
           min--;
         }
         //var sec_txt=sec<0?"0"+sec:sec;
-
         if (min<0){
           clearInterval(timer);
         }
       },100); */
 
-      var r=Math.random();
+      /* var r=Math.random();
       r=r*100;
       r=parseInt(r);
       do{
@@ -97,7 +96,163 @@
         alert("Chuc mung");
       }else{
         alert("Chia buon");
-      }
+      } */
+
+      // var obj = {};
+      // obj.name = "Nguyễn Đăng Toàn";
+      // obj.age = "18";
+      // obj.address = "Đồng Gia Kim Thành Hải Dương";
+      // console.log(obj);
+      // var obj2 = {
+      //     name : "Bùi Phương Mei",
+      //     age : "18",
+      //     address : "Đại Đức Kim Thành Hải Dương",
+      //     PID : 0987654321,
+      //     run : function (){
+      //         console.log("CCCD: "+this.PID);
+      //     }
+      // };
+      // console.log(obj2);
+      // obj2.name = "Bùi Phương Mai";
+      // console.log(obj2.name);
+      // obj2.run();
+      // var obj3 = Object.create(obj2);
+
+    </script>
+<!--    <h1 id="title">Xin chao</h1>-->
+<!--    <p id="para">Tuioe bui deo gine laien eito doien leorn boin cieraoen vioen megaien tuem goi nro-->
+<!--        keng. Cuei gew hien siow zin vieo qies ksne po ege lenge keiw len. Baui doqn siemp-->
+<!--        gui wiennarie meng qio huio fw veio. Xie yeg quet leon ge awm gneem.</p>-->
+<!--    <h2><span id="minutes">10</span>:<span id="seconds">00</span></h2>-->
+    <script type="text/javascript">
+        // var t = document.getElementById("title");
+        // setTimeout(function (){
+        //     t.style.color =  "red";
+        // },3000);
+        //
+        // var r = document.getElementById("para");
+        // var f= false;
+        // setInterval(function (){
+        //     if (f == false){
+        //         r.style.color = "green";
+        //         f = true;
+        //     }else {
+        //         r.style.color = "blue";
+        //         f = false;
+        //     }
+        // },1000)
+
+        // var min=10,sec=0;
+        // var m = document.getElementById("minutes");
+        // var s = document.getElementById("seconds");
+        // var timer = setInterval(function (){
+        //     var m_txt = min;
+        //     var m_txt = min < 10 ? ("0"+min):min;
+        //     var sec_txt = sec;
+        //     var sec_txt=sec<0?"0"+sec:sec;
+        //     m.innerText = m_txt;
+        //     s.innerText = sec_txt;
+        //     sec--;
+        //     if (sec<0){
+        //         sec=59;
+        //         min--;
+        //     }
+        //     if (min<0){
+        //         clearInterval(timer);
+        //     }
+        // },100);
+    </script>
+<!--    <div class="box" onmouseenter="boxAction1()" onmouseleave="boxAction2()">-->
+<!--    </div>-->
+<!--    <input id="ips1" type="text" placeholder="Ho" onkeyup="inputAction1();typing(this);" onkeydown="inputAction2()" onchange="inputAction3()"/>-->
+<!--    <input id="ips2" type="text" placeholder="Ten" onkeyup="inputAction1();typing(this);" onkeydown="inputAction2()" onchange="inputAction3()"/>-->
+<!--    <span id="typing">Typing: </span>-->
+<!--    <p id="content"></p>-->
+    <script type="text/javascript">
+        // function boxAction1(){
+        //     console.log("Action 11111....");
+        // }
+        // function boxAction2(){
+        //     console.log("Action 22222....");
+        // }
+        // var ips1 = document.getElementById("ips1");
+        // var ips2 = document.getElementById("ips2");
+        // var ct = document.getElementById("content");
+        // var tp = document.getElementById("typing");
+        // function typing(element){
+        //     var v = element.value;
+        //     tp.innerText = "Typing: "+v;
+        // }
+        // function inputAction1(){
+        //     var v1 = ips1.value;
+        //     var v2 = ips2.value;
+        //     //console.log("Keyup..."+v);
+        //     ct.innerText = v1+" "+v2;
+        // }
+        // function inputAction2(){
+        //     var v = ips1.value;
+        //     console.log("Keydown..."+v);
+        // }
+        // function inputAction3(){
+        //     var v = ips1.value;
+        //     console.log("Change..."+v);
+        // }
+    </script>
+    <h1>Nhập Thông Tin:</h1>
+    <input id="ipn" type="name" placeholder="Họ và tên" onkeyup="tpname()" onchange="typing()"/>
+    <p id="tpn">Typing:</p>
+    <input id="ipt" type="telephone" placeholder="Số điện thoại" onkeyup="tptel()" onchange="typing()"/>
+    <p id="tpt">Typing:</p>
+    <input id="ipe" type="email" placeholder="Email" onkeyup="tpemail()" onchange="typing()"/>
+    <p id="tpe">Typing:</p>
+    <input id="ipa" type="text" placeholder="Địa chỉ" onkeyup="tpaddress()" onchange="typing()"/>
+    <p id="tpa">Typing:</p>
+    <button type="button" onclick="submit()">Xác nhận</button>
+    <div>
+        <h1>Danh Sách Đã Nhập:</h1>
+        <p id="content">(Trống)</p>
+    </div>
+    <script type="text/javascript">
+        var ipn = document.getElementById("ipn");
+        var ipt = document.getElementById("ipt");
+        var ipe = document.getElementById("ipe");
+        var ipa = document.getElementById("ipa");
+        var tpn = document.getElementById("tpn");
+        var tpt = document.getElementById("tpt");
+        var tpe = document.getElementById("tpe");
+        var tpa = document.getElementById("tpa");
+        //function tpname(){
+            var name = ipn.value;
+            tpn.innerText = "Typing: "+name;
+        //}
+        function tptel(){
+            var tel = ipt.value;
+            tpt.innerText = "Typing: "+tel;
+        }
+        function tpemail(){
+            var email = ipe.value;
+            tpe.innerText = "Typing: "+email;
+        }
+        function tpaddress(){
+            var address = ipa.value;
+            tpa.innerText = "Typing: "+address;
+        }
+        function typing(){
+            tpn.innerText = "Typing:";
+            tpt.innerText = "Typing:";
+            tpe.innerText = "Typing:";
+            tpa.innerText = "Typing:";
+        }
+        var ct = document.getElementById("content");
+        function submit(){
+            var arr=[];
+            for (var i=0; i<arr.length; i++){
+                arr[i] = name;
+            }
+            for (var i=0; i<arr.length; i++){
+                ct.innerText = ct+name;
+            }
+        }
     </script>
 </body>
 </html>

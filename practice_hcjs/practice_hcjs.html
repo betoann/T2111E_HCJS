@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href='//fonts.googleapis.com/css?family=Fugaz+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="bootstrap3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="practice_hcjs.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="text-uppercase text-center">Multi Steps Form Widget</h1>
+    </header>
+    <nav class="nav">
+        <div class="container text-center">
+            <ul>
+                <li><a class="prf" href="" onclick="profile()">Profile</a></li>
+                <li><a href="#" onclick="account()">Account</a></li>
+                <li><a href="#" onclick="details()">Details</a></li>
+                <li><a href="#" onclick="profession()">Profession</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="section">
+        <div class="container">
+            <div class="content">
+                <div class="entry" id="replace">
+                    <form method="get" action="#">
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="firstname" placeholder="First name" required>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="lastname" placeholder="Last name" required>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="tel" name="phone" placeholder="Phone" required>
+                        </div>
+                        <div class="form-group ">
+                            <label>Gender:</label>
+                            <label><input class="form-gender" type="radio" name="gender" value="Nam"/>Female</label>
+                            <label><input class="form-gender" type="radio" name="gender" value="Nữ"/>Male</label>
+                        </div>
+                        <div class="form-group ">
+                            <input class="form-control form-address" type="text" name="address" placeholder="Address">
+                        </div>
+                        <div class="form-group">
+                            <button class="next-btn" type="button">Next</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer"></footer>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+        function profile(){
+
+        }
+        function account(){
+            var p_content = document.getElementById("replace");
+            p_content.innerHTML = "This is Account content";
+        }
+        function details(){
+            var m_content = document.getElementById("replace");
+            m_content.innerHTML = "This is Details content";
+        }
+        function profession(){
+            var s_content = document.getElementById("replace");
+            s_content.innerHTML = "This is Profession content";
+        }
+    </script>
+</body>
+</html>
